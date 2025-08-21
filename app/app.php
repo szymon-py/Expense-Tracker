@@ -38,9 +38,9 @@ function extractTransaction(array $transactionRow): array
     $amount = (float) str_replace(['$', ','], '', $amount);
 
     return [
-        'Date' => $date,
-        'CheckNumber' => $checkNumber,
-        'Description' => $description,
-        'Amount' => $amount
+        'date' => $date,
+        'checkNumber' => $checkNumber,
+        'description' => $description,
+        'amount' => $amount
     ];
 }
