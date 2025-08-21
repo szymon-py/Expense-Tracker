@@ -38,7 +38,22 @@
             </tr>
         </thead>
         <tbody>
-
+            <?php if (! empty($transactions)): ?>
+                <?php foreach ($transactions as $transaction): ?>
+                    <tr>
+                        <td><?= $transaction['date'] ?></td>
+                        <td><?= $transaction['checkNumber'] ?></td>
+                        <td><?= $transaction['description'] ?></td>
+                        <?php if ($transaction['amount'] > 0): ?>
+                            <td style="color: green;"><?= $transaction['amount'] ?></td>
+                        <?php elseif ($transaction['amount'] < 0): ?>
+                            <td style="color: red;"><?= $transaction['amount'] ?></td>
+                        <?php else: ?>
+                            <td><?= $transaction['amount'] ?></td>
+                        <?php endif; ?>
+                    </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </tbody>
         <tfoot>
             <tr>
