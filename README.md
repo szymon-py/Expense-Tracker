@@ -10,5 +10,5 @@ This project is a lightweight expense tracking tool built with PHP. It includes 
 
 - **Transaction support** – Add and display both positive (income) and negative (expense) amounts.
 - **Color-coded display** – Amounts are shown in green for income, red for expenses, and default color for zero balances.
-- **Formatted output** – Utilizes a helper function (`formatAmount`) to ensure proper currency formatting.
-- **Totals calculation** – Automatic computation of transaction totals with recent enhancements.:contentReference[oaicite:1]{index=1}
+- **Formatted output** – Utilizes a helper function (`formatAmount`) to ensure proper currency formatting and date formating.
+- **Totals calculation** – Automatic computation of transaction totals 
